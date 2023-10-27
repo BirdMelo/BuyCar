@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public record R_Data(
-        @JsonAlias("codigo") String code,
+        @JsonAlias("codigo") int code,
         @JsonAlias("nome") String name
 )
 { }
